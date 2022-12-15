@@ -12,8 +12,8 @@ public class SearchBot {
 
     public static void main(String[] args) {
 
-        //DiscordClient client = DiscordClient.create("MTA1MjAyNTU4NzY3MTI0NDgxMA.G1fa0M.Uq2Kd-4BYdG_y3LmsxQaQjBmJR0x298Ce9wiD8");
-        String Token = "MTA1MjAyNTU4NzY3MTI0NDgxMA.G1fa0M.Uq2Kd-4BYdG_y3LmsxQaQjBmJR0x298Ce9wiD8";
+        //If the discord bot token is needed to test my project please let me know and I will email it to you.
+        String Token = "Discord Bot Token Goes Here";
         DiscordApi api = new DiscordApiBuilder().setToken(Token).login().join();
 
         api.addSlashCommandCreateListener(event -> {
