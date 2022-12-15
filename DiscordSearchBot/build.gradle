@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.javacord:javacord-api:3.7.0'
+    implementation 'org.javacord:javacord-core:3.7.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    implementation 'org.javacord:javacord:3.7.0'
+    runtimeOnly 'org.apache.logging.log4j:log4j-core:2.17.0'
+    implementation 'org.jsoup:jsoup:1.15.3'
+}
+
+test {
+    useJUnitPlatform()
+}
